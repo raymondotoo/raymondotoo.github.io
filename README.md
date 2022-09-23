@@ -1,2 +1,2 @@
-# My personal CV/Resume
+# My personal CV/Resume [![pages-build-deployment](https://github.com/rayotoo/rayotoo.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/rayotoo/rayotoo.github.io/actions/workflows/pages/pages-build-deployment) [![Deploy static content to Pages](https://github.com/rayotoo/rayotoo.github.io/actions/workflows/static.yml/badge.svg)](https://github.com/rayotoo/rayotoo.github.io/actions/workflows/static.yml)
 This contains my personal portfolio with my resume and samples of my works.
