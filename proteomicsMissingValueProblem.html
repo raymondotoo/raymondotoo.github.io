@@ -1,1 +1,34 @@
+<div class="container bg-white py-5">
+    <div class="row px-3">
+        <div class="col-12">
+            <h2 class="title position-relative pb-2 mb-4">The Proteomics Missing Value Problem</h2>
+        </div>
+        <div class="col-12">
+            <p align="justify">The proteomics missing value problem is a significant hurdle in the analysis of mass spectrometry-based data. It refers to the empty data points that appear in a dataset where a protein or peptide was expected to be measured, but an abundance value was not recorded. Addressing this issue is critical for ensuring the integrity of downstream statistical analyses and drawing accurate biological conclusions.</p>
 
+            <h4 class="mt-4">Why Do Missing Values Occur?</h4>
+            <p align="justify">Missing values are not random errors; they are often tied to the underlying biology and the limitations of the mass spectrometry (MS) instrument. The primary reasons include:</p>
+            <ul>
+                <li><strong>Missing Not At Random (MNAR):</strong> This is the most common type of missingness in proteomics. It occurs when a protein's abundance is too low to be reliably detected by the mass spectrometer. The signal falls below the instrument's limit of detection (LOD), and therefore, no value is recorded. This is also referred to as "left-censored" data, as the missing values are concentrated at the lower end of the abundance distribution.</li>
+                <li><strong>Missing Completely At Random (MCAR):</strong> This type of missingness is less frequent and is caused by random technical or experimental failures. Examples include issues with sample handling, injection, or random fluctuations in the instrument's performance that are unrelated to the protein's abundance.</li>
+                <li><strong>Missing At Random (MAR):</strong> This is a more general category where missingness is dependent on other measured variables in the dataset, but not on the protein's abundance itself. In proteomics, this is often treated as a subcategory of MCAR because of its more random nature compared to MNAR.</li>
+            </ul>
+
+            <h4 class="mt-4">The Problem with Ignoring Missing Values</h4>
+            <p align="justify">Ignoring missing values can lead to severe analytical biases and a loss of statistical power. Simply deleting samples or proteins with missing values (a "complete case analysis") can significantly reduce the dataset size, diminishing the study's scope and statistical power. Furthermore, naive replacement methods, such as filling in zeros or the mean, can distort the data distribution, create artificial signals, and introduce false positives in differential expression analysis.</p>
+
+            <h4 class="mt-4">The Solution: Data Imputation</h4>
+            <p align="justify">Data imputation is the process of replacing missing values with estimated ones, allowing for the use of the entire dataset. The choice of imputation method is critical and should be informed by the type of missingness present in the data.</p>
+            <p align="justify">Imputation methods can be broadly categorized into three types:</p>
+            <ol>
+                <li><strong>Single-Value Replacement:</strong> These are the simplest methods, where missing values are replaced with a single constant. Examples include zero, mean, or lowest-value imputation. While easy to implement, these methods are not generally recommended as they can skew the data and lead to biased results.</li>
+                <li><strong>Local Similarity Approaches:</strong> These methods use information from similar data points to estimate missing values. They are based on the assumption that proteins with similar abundance patterns are likely to be related. Examples include **k-Nearest Neighbors (kNN)** and **Local Least Squares (LLS)**.</li>
+                <li><strong>Global Similarity Approaches:</strong> These advanced statistical and machine learning methods consider the entire dataset to model the underlying structure and relationships. Examples include **Principal Component Analysis (PCA)-based Imputation**, **Random Forest (MissForest)**, and **SVD-based Imputation (SVDImpute)**.</li>
+            </ol>
+
+            <h4 class="mt-4">Conclusion</h4>
+            <p align="justify">The proteomics missing value problem is an unavoidable challenge in quantitative proteomics. The choice of how to handle these missing data points is crucial for the reliability of the research. While simple methods exist, advanced imputation techniques that account for the nature of the missingness—especially the MNAR problem—are essential for accurately recovering biological signals and ensuring robust and reproducible results.</p>
+            <p align="justify">For a more detailed look, you can watch this video on the topic: <a href="https://www.youtube.com/watch?v=KwprNYv5Pp0">Types of missing data in proteomics</a></p>
+        </div>
+    </div>
+</div>
