@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="rBzRbHEzugMrH96fL49RueDvD6KXMM8gsMzwlANqlq4" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymond Otoo, Ph.D. - Personal Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free Website Template" name="keywords">
-    <meta content="Free Website Template" name="description">
-
+    
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -27,182 +24,166 @@
 
     <style>
         body {
-            padding-top: 70px; /* to avoid content hidden under fixed navbar */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
+        .navbar {
+            z-index: 9999;
+        }
+
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #f8f9fa;
+            flex-shrink: 0;
+            padding-top: 70px; /* space for fixed navbar */
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            flex: 1;
+            padding: 70px 30px 30px 30px; /* top padding for navbar */
+        }
+
+        .section {
+            padding: 50px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
         .navbar-nav .nav-link {
-            margin-right: 15px;
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            color: #fff !important;
+        }
+
+        @media(max-width: 768px){
+            .wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                padding-top: 140px;
+            }
         }
     </style>
 </head>
+<body>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<!-- Fixed Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Raymond Otoo, Ph.D.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#workshops">Workshops</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Fixed Header / Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Raymond Otoo, Ph.D.</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#workshops">Workshops</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quotes">Quotes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+<div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
+            <img class="w-100 img-fluid mb-4" src="img/Profile.jpg" alt="Profile">
+            <h1 class="mt-2">Raymond Otoo, Ph.D.</h1>
+            <div class="mb-4" style="height: 22px;">
+                <h4 class="typed-text-output d-inline-block text-body"></h4>
+                <div class="typed-text d-none">Bioinformatics Scientist, NLP Enthusiast, ORISE Fellow</div>
+            </div>
+            <div class="d-flex justify-content-center mt-auto mb-3">
+                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2" href="https://www.linkedin.com/in/raymond-anan-otoo-8aa77424"><i class="fab fa-linkedin-in"></i></a>
+                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="d-flex align-items-end justify-content-between">
+                <a href="https://drive.google.com/file/d/1CtAeBJ07pLzHOgTswO7elcPQ72SHnBM2/view" class="btn btn-block border-right">Download CV</a>
+                <a href="#contact" class="btn btn-block btn-scroll">Contact Me</a>
             </div>
         </div>
-    </nav>
-    <!-- Fixed Header / Navbar End -->
-
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-                <img class="w-100 img-fluid mb-4" src="img/Profile.jpg" alt="Image">
-                <h1 class="mt-2">Raymond Otoo, Ph.D.</h1>
-                <div class="mb-4" style="height: 22px;">
-                    <h4 class="typed-text-output d-inline-block text-body"></h4>
-                    <div class="typed-text d-none">Bioinformatics Scientist, NLP Enthusiast, ORISE Fellow</div>
-                </div>
-                <div class="d-flex justify-content-center mt-auto mb-3">
-                    <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://www.linkedin.com/in/raymond-anan-otoo-8aa77424"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="mx-2" href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-                <div class="d-flex align-items-end justify-content-between">
-                    <a href="https://drive.google.com/file/d/1CtAeBJ07pLzHOgTswO7elcPQ72SHnBM2/view" class="btn btn-block border-right">Download CV</a>
-                    <a href="#contact" class="btn btn-block btn-scroll">Contact Me</a>
-                </div>
-            </div>
-            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
-            </div>
-        </div>
-        <div class="content">
-
-            <!-- About Start -->
-            <div id="about" class="container bg-white py-5">
-                <div class="row px-3">
-                    <div class="col-12">
-                        <h2 class="title position-relative pb-2 mb-4">About Me</h2>
-                    </div>
-                    <div class="col-12">
-                        <p align="justify"> I'm a Bioinformatics Scientist with 4+ years of experience at the intersection of bioinformatics research and machine learning. I specialize in multi-omics data analysis and in building reproducible workflows that uncover insights from large-scale sequencing data, with the goal of driving biomarker discovery and advancing disease modeling. My current work focuses on uncovering risk factors and molecular mechanisms underlying Alzheimer’s disease and traumatic brain injury through integrative analysis of terabyte-scale proteomics, transcriptomics, and neuroimaging data. Outside of research, I enjoy traveling and photography, passions that inspire my curiosity and creativity.</p>
-                        <div class="row">
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Name:</h5> Raymond Otoo, Ph.D.
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Research Area:</h5> Neuroscience
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Degree:</h5> Doctorate
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Experience:</h5> 4 Years
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Phone:</h5> +1 501 840 0817
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Email:</h5> raymondotoo115@gmail.com
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Address:</h5> Little Rock, Arkansas, USA
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <h5 class="d-inline text-primary">Freelance:</h5> Available
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- About End -->
-
-            <!-- Skills Start -->
-            <div id="skills" class="container bg-white py-5">
-                <!-- Skills content stays unchanged -->
-            </div>
-            <!-- Skills End -->
-
-            <!-- Projects Start -->
-            <div id="projects" class="container bg-white py-5">
-                <!-- Projects content stays unchanged -->
-            </div>
-            <!-- Projects End -->
-
-            <!-- Experience Start -->
-            <div id="experience" class="container bg-white py-5">
-                <!-- Experience content stays unchanged -->
-            </div>
-            <!-- Experience End -->
-
-            <!-- Workshops Start -->
-            <div id="workshops" class="container bg-white py-5">
-                <!-- Workshops content stays unchanged -->
-            </div>
-            <!-- Workshops End -->
-
-            <!-- Services Start -->
-            <div id="services" class="container bg-white pt-5 pb-3">
-                <!-- Services content stays unchanged -->
-            </div>
-            <!-- Services End -->
-
-            <!-- Portfolio Start -->
-            <div id="portfolio" class="container bg-white pt-5 pb-3">
-                <!-- Portfolio content stays unchanged -->
-            </div>
-            <!-- Portfolio End -->
-
-            <!-- Quotes Start -->
-            <div id="quotes" class="container bg-white py-5">
-                <!-- Testimonial content stays unchanged -->
-            </div>
-            <!-- Quotes End -->
-
-            <!-- Contact Start -->
-            <div id="contact" class="container bg-white py-5">
-                <!-- Contact content stays unchanged -->
-            </div>
-            <!-- Contact End -->
-
-            <!-- Footer Start -->
-            <div class="container-fluid bg-white pt-5 px-0">
-                <!-- Footer content stays unchanged -->
-            </div>
-            <!-- Footer End -->
-
+        <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+            <i class="fas fa-2x fa-angle-double-right text-primary"></i>
         </div>
     </div>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About -->
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p align="justify"> I'm a Bioinformatics Scientist with 4+ years of experience at the intersection of bioinformatics research and machine learning. I specialize in multi-omics data analysis and in building reproducible workflows that uncover insights from large-scale sequencing data, with the goal of driving biomarker discovery and advancing disease modeling. My current work focuses on uncovering risk factors and molecular mechanisms underlying Alzheimer’s disease and traumatic brain injury through integrative analysis of terabyte-scale proteomics, transcriptomics, and neuroimaging data. Outside of research, I enjoy traveling and photography, passions that inspire my curiosity and creativity.</p>
+        </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <!-- Skills -->
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>Python - 95%</p>
+                    <p>R - 85%</p>
+                    <p>Ansible - 90%</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>Java - 90%</p>
+                    <p>AWS Cloud Formation - 95%</p>
+                    <p>Git - 85%</p>
+                </div>
+            </div>
+        </div>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+        <!-- Projects -->
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Project list and links here...</p>
+        </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Experience -->
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+            <p>Experience section content...</p>
+        </div>
+
+        <!-- Workshops -->
+        <div id="workshops" class="section">
+            <h2>Workshops & Conferences</h2>
+            <p>Workshop info...</p>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Contact form or info here...</p>
+        </div>
+    </div>
+</div>
+
+<!-- JS Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
