@@ -216,9 +216,13 @@
                                     <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                 </div>
                                 <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
                                     <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+                                <div id="success"></div>
                             </form>
                         </div>
                     </div>
@@ -348,57 +352,58 @@
                 <div class="container bg-white pt-5 pb-3">
                     <div class="row px-3">
                         <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Portfolio</h2>
+                            <h2 class="title position-relative pb-2 mb-4">Portfolio & Learning Paths</h2>
                         </div>
                         <div class="col-12">
-                            <div class="row">
-                                <div class="col-12 text-center mb-2">
-                                    <ul class="list-inline mb-4" id="portfolio-flters">
-                                        <li class="btn btn-outline-primary active"  data-filter="*"><i class="fa fa-star mr-2"></i>All</li>
-                                        <li class="btn btn-outline-primary" data-filter=".first"><i class="fa fa-laptop-code mr-2"></i>Design</li>
-                                        <li class="btn btn-outline-primary" data-filter=".second"><i class="fa fa-mobile-alt mr-2"></i>Development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="row portfolio-container">
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                                <i class="fa fa-4x fa-plus text-white"></i>
-                                            </a>
-                                        </div>
+                            <div class="portfolio-learning-paths">
+                                <!-- Portfolio Card: Shiny App Development -->
+                                <div class="learning-path-card">
+                                    <h4>Shiny App Development</h4>
+                                    <p>Interactive web applications for bioinformatics visualization and analysis.</p>
+                                    <div class="horizontal-scroll">
+                                        <img src="img/portfolio-1.jpg" alt="Shiny App Example" class="portfolio-img">
+                                        <img src="img/portfolio-2.jpg" alt="Shiny App Example 2" class="portfolio-img">
+                                        <img src="img/portfolio-3.jpg" alt="Shiny App Example 3" class="portfolio-img">
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                                <i class="fa fa-4x fa-plus text-white"></i>
-                                            </a>
-                                        </div>
+                                <!-- Portfolio Card: Proteomics -->
+                                <div class="learning-path-card">
+                                    <h4>Proteomics</h4>
+                                    <p>Advanced protein quantification, biomarker discovery, and pathway analysis.</p>
+                                    <div class="horizontal-scroll">
+                                        <img src="img/prot_image_1.jpeg" alt="Proteomics Plot 1" class="portfolio-img">
+                                        <img src="img/prot_image2.jpeg" alt="Proteomics Plot 2" class="portfolio-img">
+                                        <img src="img/portfolio-4.jpg" alt="Proteomics Plot 3" class="portfolio-img">
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4 portfolio-item first">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                                <i class="fa fa-4x fa-plus text-white"></i>
-                                            </a>
-                                        </div>
+                                <!-- Portfolio Card: Microbiomics -->
+                                <div class="learning-path-card">
+                                    <h4>Microbiomics</h4>
+                                    <p>Microbial community profiling and functional analysis using Qiime2.</p>
+                                    <div class="horizontal-scroll">
+                                        <img src="img/portfolio-1.jpg" alt="Microbiome Plot 1" class="portfolio-img">
+                                        <img src="img/portfolio-2.jpg" alt="Microbiome Plot 2" class="portfolio-img">
+                                        <img src="img/portfolio-3.jpg" alt="Microbiome Plot 3" class="portfolio-img">
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-4 portfolio-item second">
-                                    <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                                        <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                                <i class="fa fa-4x fa-plus text-white"></i>
-                                            </a>
-                                        </div>
+                                <!-- Portfolio Card: Transcriptomics -->
+                                <div class="learning-path-card">
+                                    <h4>Transcriptomics</h4>
+                                    <p>Bulk and single-cell RNA-seq analysis for gene expression studies.</p>
+                                    <div class="horizontal-scroll">
+                                        <img src="img/portfolio-4.jpg" alt="Transcriptomics Plot 1" class="portfolio-img">
+                                        <img src="img/portfolio-1.jpg" alt="Transcriptomics Plot 2" class="portfolio-img">
+                                        <img src="img/portfolio-2.jpg" alt="Transcriptomics Plot 3" class="portfolio-img">
+                                    </div>
+                                </div>
+                                <!-- Portfolio Card: Multiomics Integration -->
+                                <div class="learning-path-card">
+                                    <h4>Multiomics Integration</h4>
+                                    <p>Integrative analysis of proteomics, transcriptomics, and microbiomics data.</p>
+                                    <div class="horizontal-scroll">
+                                        <img src="img/portfolio-3.jpg" alt="Multiomics Plot 1" class="portfolio-img">
+                                        <img src="img/prot_image_1.jpeg" alt="Multiomics Plot 2" class="portfolio-img">
+                                        <img src="img/prot_image2.jpeg" alt="Multiomics Plot 3" class="portfolio-img">
                                     </div>
                                 </div>
                             </div>

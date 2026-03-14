@@ -64,6 +64,99 @@ body {
   background-color: #F2F2F2;
 }
 
+/* Portfolio Learning Paths Styles */
+.portfolio-learning-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.learning-path-card {
+  background: linear-gradient(135deg, #f8fff8 0%, #e6f7ea 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(120,204,109,0.13);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #78CC6D;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+}
+.learning-path-card:hover {
+  box-shadow: 0 8px 32px rgba(120,204,109,0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+.learning-path-card h4 {
+  font-family: 'Averia Serif Libre', serif;
+  color: #78CC6D;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+.learning-path-card p {
+  font-size: 1.05rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #78CC6D #e6f7ea;
+}
+.horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #78CC6D;
+  border-radius: 4px;
+}
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #e6f7ea;
+  border-radius: 4px;
+}
+.portfolio-img {
+  min-width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(120,204,109,0.08);
+  border: 2px solid #e6f7ea;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.portfolio-img:hover {
+  box-shadow: 0 4px 16px rgba(120,204,109,0.18);
+  transform: scale(1.04);
+}
+}
+.learning-path-card h4 {
+  font-family: 'Averia Serif Libre', serif;
+  color: #78CC6D;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.learning-path-card p {
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+}
+.portfolio-img {
+  min-width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(120,204,109,0.08);
+  border: 2px solid #e6f7ea;
+}
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
