@@ -68,6 +68,50 @@ body {
 }
 
 /* Custom Bioinformatics Portfolio Styles */
+.brand-mark {
+  font-weight: 700;
+  color: #143c28;
+  text-decoration: none;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  color: #2b2f32;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  color: #2d6a4f;
+}
+
+.site-tabs .nav-link {
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-weight: 600;
+  color: #2b2f32;
+  background: #f1f7f3;
+  margin-left: 0.5rem;
+}
+
+.site-tabs .nav-link.active {
+  background: #2d6a4f;
+  color: #ffffff;
+}
+
+.site-tabs .nav-link:hover {
+  color: #143c28;
+}
+
 .container.bg-white {
   border-radius: 18px;
   box-shadow: 0 18px 40px rgba(20, 60, 40, 0.08);
@@ -136,6 +180,44 @@ body {
 .section-note {
   color: #556068;
   max-width: 720px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.learning-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.1rem;
+  border-radius: 16px;
+  background: #f6fbf7;
+  border: 1px solid #e3ede7;
+  box-shadow: 0 10px 20px rgba(20, 60, 40, 0.08);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.learning-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.learning-card h4 {
+  font-family: "Averia Serif Libre", serif;
+  color: #143c28;
+  margin-bottom: 0.35rem;
+}
+
+.learning-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 28px rgba(20, 60, 40, 0.12);
 }
 
 .tool-grid {
@@ -210,6 +292,23 @@ body {
   font-weight: 600;
 }
 
+.cta-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #dff3e5, #f5fbf8);
+  border: 1px solid #d9efe1;
+}
+
+.cta-panel h2 {
+  margin-bottom: 0.35rem;
+  color: #143c28;
+}
+
 .cv-header {
   display: flex;
   flex-wrap: wrap;
@@ -282,6 +381,10 @@ body {
   .profile-img {
     width: 150px;
     height: 150px;
+  }
+  .site-nav {
+    justify-content: flex-start;
+    margin-top: 0.5rem;
   }
 }
 

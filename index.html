@@ -31,400 +31,369 @@
     <body id="top">
         <div class="wrapper">
             <div class="content">
-                <!-- About / Hero Start -->
-                <div class="container bg-white pt-5 pb-4" id="about">
+                <!-- Top Nav / Tabs Start -->
+                <div class="container bg-white py-3">
                     <div class="row px-3 align-items-center">
-                        <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
-                            <img class="profile-img mb-3" src="img/author.jpg" alt="Portrait of Raymond Otoo">
-                            <div class="hero-actions">
-                                <a class="btn btn-primary mr-2 mb-2" href="#projects">View Projects</a>
-                                <a class="btn btn-outline-primary mr-2 mb-2" href="https://drive.google.com/file/d/1CtAeBJ07pLzHOgTswO7elcPQ72SHnBM2/view" target="_blank" rel="noopener">Download CV</a>
-                                <a class="btn btn-outline-primary mr-2 mb-2" href="cv.html">View CV</a>
-                                <a class="btn btn-outline-primary mr-2 mb-2" href="https://github.com/raymondotoo" target="_blank" rel="noopener">GitHub</a>
-                                <a class="btn btn-outline-primary mb-2" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">LinkedIn</a>
-                            </div>
+                        <div class="col-lg-4">
+                            <a class="brand-mark" href="#top">Bioinformatics Learn Infinite</a>
                         </div>
                         <div class="col-lg-8">
-                            <p class="kicker">Bioinformatics | Multi-omics | Visualization</p>
-                            <h1 class="hero-title">Raymond Otoo, Ph.D.</h1>
-                            <p class="lead hero-lead">
-                                Bioinformatician specializing in multi-omics integration, proteomics, microbiome analytics, transcriptomics,
-                                and Shiny app development. I translate complex biological datasets into reproducible insights and clear,
-                                decision-ready visuals.
-                            </p>
-                            <div class="focus-list mb-3">
-                                <span class="pill">Multi-omics integration</span>
-                                <span class="pill">Proteomics & biomarker discovery</span>
-                                <span class="pill">Bulk and single-cell RNA-seq</span>
-                                <span class="pill">Microbiome profiling (QIIME 2)</span>
-                                <span class="pill">Interactive dashboards (Shiny)</span>
-                                <span class="pill">Reproducible analysis pipelines</span>
-                            </div>
-                            <div class="toolbox">
-                                <h3 class="section-subtitle">Core Toolbox</h3>
-                                <div class="tool-grid">
-                                    <span class="tool-chip">R / Bioconductor</span>
-                                    <span class="tool-chip">Python</span>
-                                    <span class="tool-chip">Shiny</span>
-                                    <span class="tool-chip">SQL</span>
-                                    <span class="tool-chip">Git</span>
-                                    <span class="tool-chip">Docker</span>
-                                </div>
-                            </div>
+                            <ul class="nav nav-pills site-tabs justify-content-lg-end" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tab-home" role="tab" aria-controls="tab-home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-projects" role="tab" aria-controls="tab-projects" aria-selected="false">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-publications" role="tab" aria-controls="tab-publications" aria-selected="false">Publications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-experience" role="tab" aria-controls="tab-experience" aria-selected="false">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tab-contact" role="tab" aria-controls="tab-contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- About / Hero End -->
+                <!-- Top Nav / Tabs End -->
 
-                <!-- Portfolio Start -->
-                <div class="container bg-white pt-5 pb-3" id="portfolio">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Research Focus & Portfolio</h2>
-                            <p class="section-note">Selected areas with representative visuals and project entry points.</p>
-                        </div>
-                        <div class="col-12">
-                            <div class="portfolio-learning-paths">
-                                <div class="learning-path-card">
-                                    <h4>Shiny App Development</h4>
-                                    <p>Interactive web applications for bioinformatics visualization and analysis.</p>
-                                    <div class="horizontal-scroll">
-                                        <a href="portfolio_shiny.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-1.jpg" alt="Shiny App Example" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_shiny.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-2.jpg" alt="Shiny App Example 2" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_shiny.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-3.jpg" alt="Shiny App Example 3" class="portfolio-img">
-                                        </a>
+                <div class="tab-content">
+                    <!-- Home Tab Start -->
+                    <div class="tab-pane fade show active" id="tab-home" role="tabpanel">
+                        <div class="container bg-white pt-5 pb-4" id="about">
+                            <div class="row px-3 align-items-center">
+                                <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+                                    <img class="profile-img mb-3" src="img/author.jpg" alt="Portrait of Raymond Otoo">
+                                    <div class="hero-actions">
+                                        <a class="btn btn-primary mr-2 mb-2" href="#tab-projects" data-toggle="tab">View Projects</a>
+                                        <a class="btn btn-outline-primary mr-2 mb-2" href="https://drive.google.com/file/d/1CtAeBJ07pLzHOgTswO7elcPQ72SHnBM2/view" target="_blank" rel="noopener">Download CV</a>
+                                        <a class="btn btn-outline-primary mr-2 mb-2" href="cv.html">View CV</a>
+                                        <a class="btn btn-outline-primary mr-2 mb-2" href="https://github.com/raymondotoo" target="_blank" rel="noopener">GitHub</a>
+                                        <a class="btn btn-outline-primary mb-2" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">LinkedIn</a>
                                     </div>
                                 </div>
-                                <div class="learning-path-card">
-                                    <h4>Proteomics</h4>
-                                    <p>Protein quantification, biomarker discovery, and pathway analysis.</p>
-                                    <div class="horizontal-scroll">
-                                        <a href="portfolio_proteomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image_1.jpeg" alt="Proteomics Plot 1" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_proteomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image2.jpeg" alt="Proteomics Plot 2" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_proteomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-4.jpg" alt="Proteomics Plot 3" class="portfolio-img">
-                                        </a>
+                                <div class="col-lg-8">
+                                    <p class="kicker">Bioinformatics Learn Infinite</p>
+                                    <h1 class="hero-title">Raymond Otoo, Ph.D.</h1>
+                                    <p class="lead hero-lead">
+                                        Bioinformatician specializing in multi-omics integration, proteomics, microbiome analytics, transcriptomics,
+                                        and Shiny app development. I translate complex biological datasets into reproducible insights and clear,
+                                        decision-ready visuals.
+                                    </p>
+                                    <div class="focus-list mb-3">
+                                        <span class="pill">Multi-omics integration</span>
+                                        <span class="pill">Proteomics & biomarker discovery</span>
+                                        <span class="pill">Bulk and single-cell RNA-seq</span>
+                                        <span class="pill">Microbiome profiling (QIIME 2)</span>
+                                        <span class="pill">Interactive dashboards (Shiny)</span>
+                                        <span class="pill">Reproducible analysis pipelines</span>
                                     </div>
-                                </div>
-                                <div class="learning-path-card">
-                                    <h4>Microbiomics</h4>
-                                    <p>Microbial community profiling and functional analysis with QIIME 2.</p>
-                                    <div class="horizontal-scroll">
-                                        <a href="portfolio_microbiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-1.jpg" alt="Microbiome Plot 1" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_microbiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-2.jpg" alt="Microbiome Plot 2" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_microbiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-3.jpg" alt="Microbiome Plot 3" class="portfolio-img">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="learning-path-card">
-                                    <h4>Transcriptomics</h4>
-                                    <p>Bulk and single-cell RNA-seq analysis for gene expression studies.</p>
-                                    <div class="horizontal-scroll">
-                                        <a href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-4.jpg" alt="Transcriptomics Plot 1" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-1.jpg" alt="Transcriptomics Plot 2" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-2.jpg" alt="Transcriptomics Plot 3" class="portfolio-img">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="learning-path-card">
-                                    <h4>Multiomics Integration</h4>
-                                    <p>Integrated analysis of proteomics, transcriptomics, and microbiomics data.</p>
-                                    <div class="horizontal-scroll">
-                                        <a href="portfolio_multiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-3.jpg" alt="Multiomics Plot 1" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_multiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image_1.jpeg" alt="Multiomics Plot 2" class="portfolio-img">
-                                        </a>
-                                        <a href="portfolio_multiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image2.jpeg" alt="Multiomics Plot 3" class="portfolio-img">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio End -->
-
-                <!-- Projects Start -->
-                <div class="container bg-white py-5" id="projects">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Selected Projects</h2>
-                        </div>
-                    </div>
-                    <div class="row px-3">
-                        <div class="col-md-6 mb-4">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">Multi-Omics Analyses</h5>
-                                    <p class="card-text">Proteomics, DNA methylation, bulk RNA-seq, and single-cell RNA-seq workflows.</p>
-                                    <a class="project-link" href="https://github.com/raymondotoo/MultiOmics" target="_blank" rel="noopener">
-                                        github.com/raymondotoo/MultiOmics
-                                    </a>
-                                </div>
-                                <div class="card-footer project-meta">2022</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">CORD-19 NLP Project</h5>
-                                    <p class="card-text">Natural language processing pipeline for large-scale literature mining.</p>
-                                    <a class="project-link" href="https://github.com/raymondotoo/CORD-19-NLP-project" target="_blank" rel="noopener">
-                                        github.com/raymondotoo/CORD-19-NLP-project
-                                    </a>
-                                </div>
-                                <div class="card-footer project-meta">2022</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">MLOps Microservices</h5>
-                                    <p class="card-text">Operationalized a microservices Flask application with automation best practices.</p>
-                                    <a class="project-link" href="https://github.com/raymondotoo/MLOps-Project" target="_blank" rel="noopener">
-                                        github.com/raymondotoo/MLOps-Project
-                                    </a>
-                                </div>
-                                <div class="card-footer project-meta">2022</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="card project-card h-100">
-                                <div class="card-body">
-                                    <h5 class="card-title">CI/CD Autodeploy</h5>
-                                    <p class="card-text">Full CI/CD pipeline using CircleCI, Ansible, and AWS CloudFormation.</p>
-                                    <a class="project-link" href="https://github.com/raymondotoo/Autodeploy" target="_blank" rel="noopener">
-                                        github.com/raymondotoo/Autodeploy
-                                    </a>
-                                </div>
-                                <div class="card-footer project-meta">2022</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projects End -->
-
-                <!-- Publications Start -->
-                <div class="container bg-white py-5" id="publications">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Publications & Preprints</h2>
-                            <p class="section-note">Selected peer-reviewed work with DOI links.</p>
-                        </div>
-                        <div class="col-12">
-                            <div class="publication-list">
-                                <div class="publication-item">
-                                    <h5 class="mb-1">Sulforaphane's Multifaceted Potential: From Neuroprotection to Anticancer Action</h5>
-                                    <p class="mb-2">Otoo, R.A.; Allen, A.R. | Molecules | 2023</p>
-                                    <a class="publication-link" href="https://doi.org/10.3390/molecules28196902" target="_blank" rel="noopener" aria-label="Publication DOI link">doi.org/10.3390/molecules28196902</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Publications End -->
-
-                <!-- Capabilities Start -->
-                <div class="container bg-white pt-5 pb-3" id="capabilities">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Capabilities</h2>
-                        </div>
-                        <div class="col-md-6 service-item text-center mb-3">
-                            <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
-                            <h5 class="mb-2">RNA-seq Analysis</h5>
-                            <p>Differential expression, pathway enrichment, and clear reporting for bulk and single-cell studies.</p>
-                        </div>
-                        <div class="col-md-6 service-item text-center mb-3">
-                            <i class="fa fa-2x fa-flask mx-auto mb-4"></i>
-                            <h5 class="mb-2">Proteomics</h5>
-                            <p>Quantification workflows, biomarker discovery, and biological interpretation.</p>
-                        </div>
-                        <div class="col-md-6 service-item text-center mb-3">
-                            <i class="fa fa-2x fa-search mx-auto mb-4"></i>
-                            <h5 class="mb-2">Microbiome (QIIME 2)</h5>
-                            <p>Community profiling, diversity analysis, and functional inference.</p>
-                        </div>
-                        <div class="col-md-6 service-item text-center mb-3">
-                            <i class="fa fa-2x fa-project-diagram mx-auto mb-4"></i>
-                            <h5 class="mb-2">Multi-omics Integration</h5>
-                            <p>Cross-modality modeling and visualization to connect genotype and phenotype.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Capabilities End -->
-
-                <!-- Experience Start -->
-                <div class="container bg-white py-5" id="experience">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Experience</h2>
-                        </div>
-                        <div class="col-12">
-                            <div class="border-left border-primary pt-2 pl-4 ml-2">
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Doctoral Researcher (Bioinformatics)</h5>
-                                    <p class="mb-2">UAMS | <small>June 2022 - July 2025</small></p>
-                                    <p align="justify">Analyze behavioral data using statistical methods and software tools, and present results at lab meetings and scientific conferences.</p>
-                                </div>
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Bioinformatics Research Fellow</h5>
-                                    <p class="mb-2">CDER | FDA | <small>June 2022 - August 2022</small></p>
-                                    <p align="justify">Used natural language processing to analyze FDA publication data and built SQL queries to deliver analytical reports.</p>
-                                </div>
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Bioinformatics Intern</h5>
-                                    <p class="mb-2">SomaLogic Inc. | <small>June 2022 - August 2022</small></p>
-                                    <p align="justify">Built biomarker discovery models for Parkinson's disease using PPMI and SomaScan data and clustered GO biological processes.</p>
-                                </div>
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Bioinformatics Student Researcher</h5>
-                                    <p class="mb-2">UAMS | ACH | <small>June 2019 - May 2020</small></p>
-                                    <p align="justify">Analyzed SNP variants from hydrocephalus patient data and prepared a publication-ready manuscript.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Experience End -->
-
-                <!-- Workshops Start -->
-                <div class="container bg-white py-5" id="conferences">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Workshops & Conferences</h2>
-                        </div>
-                        <div class="col-12">
-                            <div class="border-left border-primary pt-2 pl-4 ml-2">
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Arkansas Bioinformatics Consortium (AR-BIC)</h5>
-                                    <p class="mb-2">North Little Rock, AR | <small>March 13-14, 2023</small></p>
-                                    <p align="justify">Conference theme: Bioinformatics, Big Data, AI, and Public Health: An Integrated World.</p>
-                                </div>
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">MCBIOS Annual Meeting</h5>
-                                    <p class="mb-2">Irving, Texas | <small>March 15-17, 2023</small></p>
-                                    <p align="justify">Conference theme: Big Data and Artificial Intelligence for Genomics and Therapeutics.</p>
-                                </div>
-                                <div class="position-relative mb-4">
-                                    <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
-                                    <h5 class="mb-1">Intel DevCloud Student Workshop</h5>
-                                    <p class="mb-2">Intel | <small>April 6, 2022</small></p>
-                                    <p align="justify">Practiced implementing OpenVINO toolkit workflows.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Workshops End -->
-
-                <!-- Contact Start -->
-                <div class="container bg-white py-5" id="contact">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Contact</h2>
-                            <p class="section-note">For collaborations, speaking, or consulting, reach out via LinkedIn or use the form below.</p>
-                            <p>
-                                <a class="link-inline" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">LinkedIn profile</a>
-                            </p>
-                        </div>
-                        <div class="col-12">
-                            <form id="contactForm" action="https://formspree.io/f/xyknpnqk" method="post">
-                                <input type="text" class="hp-field" id="company" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" aria-label="Your name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" aria-label="Your email address" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" aria-label="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" aria-label="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
-                                <div id="success" class="mt-3" role="status" aria-live="polite"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact End -->
-
-                <!-- Testimonial Start -->
-                <div class="container bg-white py-5">
-                    <div class="row px-3">
-                        <div class="col-12">
-                            <h2 class="title position-relative pb-2 mb-4">Favorite Quotes</h2>
-                        </div>
-                        <div class="col-12">
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="text-left">
-                                    <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 class="text-body mb-4">The world is not ours to keep. We hold it in trust for future generations.</h4>
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-fluid" src="img/kofiAnnan.jpg" style="width: 60px; height: 60px;" alt="Kofi Annan">
-                                        <div class="pl-3">
-                                            <h5 class="text-primary m-0">Kofi Annan</h5>
-                                            <i>Former UN Secretary General</i>
+                                    <div class="toolbox">
+                                        <h3 class="section-subtitle">Core Toolbox</h3>
+                                        <div class="tool-grid">
+                                            <span class="tool-chip">R / Bioconductor</span>
+                                            <span class="tool-chip">Python</span>
+                                            <span class="tool-chip">Shiny</span>
+                                            <span class="tool-chip">SQL</span>
+                                            <span class="tool-chip">Git</span>
+                                            <span class="tool-chip">Docker</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-left">
-                                    <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 class="text-body mb-4">Do not go where the path may lead, go instead where there is no path and leave a trail.</h4>
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-fluid" src="img/RalphWaldoEmerson.jpg" style="width: 60px; height: 60px;" alt="Ralph Waldo Emerson">
-                                        <div class="pl-3">
-                                            <h5 class="text-primary m-0">Ralph Waldo Emerson</h5>
-                                            <i>American essayist and philosopher</i>
-                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="container bg-white pt-5 pb-3" id="portfolio">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Introduction to the Bioinformatics Learning Path</h2>
+                                    <p class="section-note">A curated learning path built from research experience and industry-ready workflows.</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="learning-grid">
+                                        <a class="learning-card" href="portfolio_shiny.html" target="_blank" rel="noopener">
+                                            <img src="img/portfolio-1.jpg" alt="Shiny App Development">
+                                            <div>
+                                                <h4>Shiny App Development</h4>
+                                                <p>Interactive visualization and analysis experiences.</p>
+                                            </div>
+                                        </a>
+                                        <a class="learning-card" href="portfolio_proteomics.html" target="_blank" rel="noopener">
+                                            <img src="img/prot_image_1.jpeg" alt="Proteomics">
+                                            <div>
+                                                <h4>Proteomics</h4>
+                                                <p>Biomarker discovery and pathway interpretation.</p>
+                                            </div>
+                                        </a>
+                                        <a class="learning-card" href="portfolio_microbiomics.html" target="_blank" rel="noopener">
+                                            <img src="img/portfolio-2.jpg" alt="Microbiome Analytics">
+                                            <div>
+                                                <h4>Microbiome Analytics</h4>
+                                                <p>Community profiling and functional inference.</p>
+                                            </div>
+                                        </a>
+                                        <a class="learning-card" href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
+                                            <img src="img/portfolio-4.jpg" alt="Transcriptomics">
+                                            <div>
+                                                <h4>Transcriptomics</h4>
+                                                <p>Bulk and single-cell RNA-seq workflows.</p>
+                                            </div>
+                                        </a>
+                                        <a class="learning-card" href="portfolio_multiomics.html" target="_blank" rel="noopener">
+                                            <img src="img/prot_image2.jpeg" alt="Integrated Omics">
+                                            <div>
+                                                <h4>Integrated Omics</h4>
+                                                <p>Cross-modality integration and modeling.</p>
+                                            </div>
+                                        </a>
+                                        <a class="learning-card" href="#tab-projects" data-toggle="tab">
+                                            <img src="img/portfolio-3.jpg" alt="Machine Learning">
+                                            <div>
+                                                <h4>Machine Learning</h4>
+                                                <p>Predictive modeling for biological systems.</p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="text-left">
-                                    <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                                    <h4 class="text-body mb-4">In the end, it's not the years in your life that count. It's the life in your years.</h4>
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-fluid" src="img/AbrahamLincoln.jpg" style="width: 60px; height: 60px;" alt="Abraham Lincoln">
-                                        <div class="pl-3">
-                                            <h5 class="text-primary m-0">Abraham Lincoln</h5>
-                                            <i>American lawyer and statesman</i>
+                            </div>
+                        </div>
+
+                        <div class="container bg-white pt-5 pb-3" id="capabilities">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Capabilities</h2>
+                                </div>
+                                <div class="col-md-6 service-item text-center mb-3">
+                                    <i class="fa fa-2x fa-laptop-code mx-auto mb-4"></i>
+                                    <h5 class="mb-2">RNA-seq Analysis</h5>
+                                    <p>Differential expression, pathway enrichment, and clear reporting for bulk and single-cell studies.</p>
+                                </div>
+                                <div class="col-md-6 service-item text-center mb-3">
+                                    <i class="fa fa-2x fa-flask mx-auto mb-4"></i>
+                                    <h5 class="mb-2">Proteomics</h5>
+                                    <p>Quantification workflows, biomarker discovery, and biological interpretation.</p>
+                                </div>
+                                <div class="col-md-6 service-item text-center mb-3">
+                                    <i class="fa fa-2x fa-search mx-auto mb-4"></i>
+                                    <h5 class="mb-2">Microbiome (QIIME 2)</h5>
+                                    <p>Community profiling, diversity analysis, and functional inference.</p>
+                                </div>
+                                <div class="col-md-6 service-item text-center mb-3">
+                                    <i class="fa fa-2x fa-project-diagram mx-auto mb-4"></i>
+                                    <h5 class="mb-2">Multi-omics Integration</h5>
+                                    <p>Cross-modality modeling and visualization to connect genotype and phenotype.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container bg-white py-5">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <div class="cta-panel">
+                                        <div>
+                                            <h2>Let's connect</h2>
+                                            <p>Schedule a conversation about bioinformatics workflows, training, or consulting.</p>
+                                        </div>
+                                        <a class="btn btn-dark" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Home Tab End -->
+
+                    <!-- Projects Tab Start -->
+                    <div class="tab-pane fade" id="tab-projects" role="tabpanel">
+                        <div class="container bg-white py-5" id="projects">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Selected Projects</h2>
+                                </div>
+                            </div>
+                            <div class="row px-3">
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Multi-Omics Analyses</h5>
+                                            <p class="card-text">Proteomics, DNA methylation, bulk RNA-seq, and single-cell RNA-seq workflows.</p>
+                                            <a class="project-link" href="https://github.com/raymondotoo/MultiOmics" target="_blank" rel="noopener">
+                                                github.com/raymondotoo/MultiOmics
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">2022</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">CORD-19 NLP Project</h5>
+                                            <p class="card-text">Natural language processing pipeline for large-scale literature mining.</p>
+                                            <a class="project-link" href="https://github.com/raymondotoo/CORD-19-NLP-project" target="_blank" rel="noopener">
+                                                github.com/raymondotoo/CORD-19-NLP-project
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">2022</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">MLOps Microservices</h5>
+                                            <p class="card-text">Operationalized a microservices Flask application with automation best practices.</p>
+                                            <a class="project-link" href="https://github.com/raymondotoo/MLOps-Project" target="_blank" rel="noopener">
+                                                github.com/raymondotoo/MLOps-Project
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">2022</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">CI/CD Autodeploy</h5>
+                                            <p class="card-text">Full CI/CD pipeline using CircleCI, Ansible, and AWS CloudFormation.</p>
+                                            <a class="project-link" href="https://github.com/raymondotoo/Autodeploy" target="_blank" rel="noopener">
+                                                github.com/raymondotoo/Autodeploy
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Projects Tab End -->
+
+                    <!-- Publications Tab Start -->
+                    <div class="tab-pane fade" id="tab-publications" role="tabpanel">
+                        <div class="container bg-white py-5" id="publications">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Publications & Preprints</h2>
+                                    <p class="section-note">Selected peer-reviewed work with DOI links.</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="publication-list">
+                                        <div class="publication-item">
+                                            <h5 class="mb-1">Sulforaphane's Multifaceted Potential: From Neuroprotection to Anticancer Action</h5>
+                                            <p class="mb-2">Otoo, R.A.; Allen, A.R. | Molecules | 2023</p>
+                                            <a class="publication-link" href="https://doi.org/10.3390/molecules28196902" target="_blank" rel="noopener" aria-label="Publication DOI link">doi.org/10.3390/molecules28196902</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Publications Tab End -->
+
+                    <!-- Experience Tab Start -->
+                    <div class="tab-pane fade" id="tab-experience" role="tabpanel">
+                        <div class="container bg-white py-5" id="experience">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Experience</h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Doctoral Researcher (Bioinformatics)</h5>
+                                            <p class="mb-2">UAMS | <small>June 2022 - July 2025</small></p>
+                                            <p align="justify">Analyze behavioral data using statistical methods and software tools, and present results at lab meetings and scientific conferences.</p>
+                                        </div>
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Bioinformatics Research Fellow</h5>
+                                            <p class="mb-2">CDER | FDA | <small>June 2022 - August 2022</small></p>
+                                            <p align="justify">Used natural language processing to analyze FDA publication data and built SQL queries to deliver analytical reports.</p>
+                                        </div>
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Bioinformatics Intern</h5>
+                                            <p class="mb-2">SomaLogic Inc. | <small>June 2022 - August 2022</small></p>
+                                            <p align="justify">Built biomarker discovery models for Parkinson's disease using PPMI and SomaScan data and clustered GO biological processes.</p>
+                                        </div>
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Bioinformatics Student Researcher</h5>
+                                            <p class="mb-2">UAMS | ACH | <small>June 2019 - May 2020</small></p>
+                                            <p align="justify">Analyzed SNP variants from hydrocephalus patient data and prepared a publication-ready manuscript.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container bg-white py-5" id="conferences">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Workshops & Conferences</h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Arkansas Bioinformatics Consortium (AR-BIC)</h5>
+                                            <p class="mb-2">North Little Rock, AR | <small>March 13-14, 2023</small></p>
+                                            <p align="justify">Conference theme: Bioinformatics, Big Data, AI, and Public Health: An Integrated World.</p>
+                                        </div>
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">MCBIOS Annual Meeting</h5>
+                                            <p class="mb-2">Irving, Texas | <small>March 15-17, 2023</small></p>
+                                            <p align="justify">Conference theme: Big Data and Artificial Intelligence for Genomics and Therapeutics.</p>
+                                        </div>
+                                        <div class="position-relative mb-4">
+                                            <i class="fa fa-arrow-right text-primary position-absolute" style="top: 3px; left: -24px;"></i>
+                                            <h5 class="mb-1">Intel DevCloud Student Workshop</h5>
+                                            <p class="mb-2">Intel | <small>April 6, 2022</small></p>
+                                            <p align="justify">Practiced implementing OpenVINO toolkit workflows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience Tab End -->
+
+                    <!-- Contact Tab Start -->
+                    <div class="tab-pane fade" id="tab-contact" role="tabpanel">
+                        <div class="container bg-white py-5" id="contact">
+                            <div class="row px-3">
+                                <div class="col-12">
+                                    <h2 class="title position-relative pb-2 mb-4">Contact</h2>
+                                    <p class="section-note">For collaborations, speaking, or consulting, reach out via LinkedIn or use the form below.</p>
+                                    <p>
+                                        <a class="link-inline" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">LinkedIn profile</a>
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <form id="contactForm" action="https://formspree.io/f/xyknpnqk" method="post">
+                                        <input type="text" class="hp-field" id="company" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" aria-label="Your name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" aria-label="Your email address" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" aria-label="Subject" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" aria-label="Message" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send Message</button>
+                                        <div id="success" class="mt-3" role="status" aria-live="polite"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Tab End -->
                 </div>
-                <!-- Testimonial End -->
 
                 <!-- Footer Start -->
                 <div class="container-fluid bg-white pt-5 px-0">
