@@ -9693,6 +9693,7 @@ a.text-dark:hover, a.text-dark:focus {
   float: left;
   padding: 30px;
   background: #ffffff;
+  display: none;
 }
 
 .wrapper .sidebar-icon {
@@ -9747,6 +9748,7 @@ a.text-dark:hover, a.text-dark:focus {
     scrollbar-width: thin;
     scrollbar-color: gray;
     z-index: 9;
+    display: none;
   }
   .wrapper .sidebar:hover {
     margin-left: 0px;
@@ -9797,8 +9799,8 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 0;
   }
   .wrapper .content {
-    width: calc(100% - 350px);
-    margin-left: 350px;
+    width: 100%;
+    margin-left: 0;
   }
 }
 
