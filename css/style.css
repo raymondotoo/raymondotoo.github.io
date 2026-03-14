@@ -61,7 +61,228 @@ body {
   line-height: 1.5;
   color: #646464;
   text-align: left;
-  background-color: #F2F2F2;
+  background-color: #eef3ef;
+  background-image: radial-gradient(circle at 10% 20%, rgba(120, 204, 109, 0.15), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(23, 162, 184, 0.12), transparent 40%),
+    linear-gradient(120deg, rgba(255, 255, 255, 0.6), rgba(242, 242, 242, 0.6));
+}
+
+/* Custom Bioinformatics Portfolio Styles */
+.container.bg-white {
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(20, 60, 40, 0.08);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f2fff2;
+  box-shadow: 0 10px 24px rgba(120, 204, 109, 0.2);
+  animation: floatIn 0.8s ease both;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2d6a4f;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-family: "Averia Serif Libre", serif;
+  font-size: 2.6rem;
+  color: #143c28;
+  margin-bottom: 0.75rem;
+}
+
+.hero-lead {
+  color: #2b2f32;
+  font-size: 1.1rem;
+}
+
+.hero-actions .btn {
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.focus-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: #e8f7ec;
+  color: #1b4d3e;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #285c49;
+  margin-bottom: 0.6rem;
+}
+
+.section-note {
+  color: #556068;
+  max-width: 720px;
+}
+
+.tool-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tool-chip {
+  background: #f1f7f3;
+  border: 1px solid #d9efe1;
+  color: #2b2f32;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.project-card {
+  border: 1px solid #e3ede7;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(20, 60, 40, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(20, 60, 40, 0.12);
+}
+
+.project-link {
+  color: #2d6a4f;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.project-meta {
+  background: #f6fbf7;
+  border-top: 1px solid #e3ede7;
+  font-size: 0.9rem;
+  color: #6a7c73;
+}
+
+.link-inline {
+  color: #2d6a4f;
+  font-weight: 600;
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.publication-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.publication-item {
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
+  border: 1px solid #e3ede7;
+  background: #f7fbf8;
+  box-shadow: 0 10px 24px rgba(20, 60, 40, 0.06);
+}
+
+.publication-link {
+  color: #2d6a4f;
+  font-weight: 600;
+}
+
+.cv-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cv-header .cv-identity h1 {
+  font-family: "Averia Serif Libre", serif;
+  color: #143c28;
+  margin-bottom: 0.25rem;
+}
+
+.cv-tagline {
+  color: #2b2f32;
+}
+
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.cv-meta span {
+  background: #f1f7f3;
+  border: 1px solid #d9efe1;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.cv-section {
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #e3ede7;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(20, 60, 40, 0.06);
+}
+
+.cv-section + .cv-section {
+  margin-top: 1.25rem;
+}
+
+.cv-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #2b2f32;
+}
+
+.cv-list li {
+  margin-bottom: 0.5rem;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* Portfolio Learning Paths Styles */
@@ -128,33 +349,6 @@ body {
 .portfolio-img:hover {
   box-shadow: 0 4px 16px rgba(120,204,109,0.18);
   transform: scale(1.04);
-}
-}
-.learning-path-card h4 {
-  font-family: 'Averia Serif Libre', serif;
-  color: #78CC6D;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.learning-path-card p {
-  font-size: 1rem;
-  color: #343a40;
-  margin-bottom: 1rem;
-}
-.horizontal-scroll {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding-bottom: 0.5rem;
-}
-.portfolio-img {
-  min-width: 220px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(120,204,109,0.08);
-  border: 2px solid #e6f7ea;
-}
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
