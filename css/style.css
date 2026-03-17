@@ -510,8 +510,8 @@ body {
   background: #ffffff;
 }
 
-/* Plot tab viewer */
-.plot-tabs {
+/* Plot slider with tabbed jump */
+.plot-slider {
   border: 1px solid #e3ede7;
   border-radius: 16px;
   background: linear-gradient(120deg, #f8fff8, #eef6f0);
@@ -548,16 +548,28 @@ body {
   transform: translateY(-1px);
 }
 
-.plot-pane {
-  display: none;
+.plot-window {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border: 1px solid #e3ede7;
+  border-radius: 14px;
+  background: #ffffff;
 }
 
-.plot-pane.active {
-  display: block;
+.plot-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
 }
 
-.plot-pane .plot-frame {
-  margin-bottom: 0.75rem;
+.plot-card {
+  min-width: 100%;
+  scroll-snap-align: start;
+  padding: 0.75rem;
+}
+
+.plot-card .plot-frame {
+  margin-bottom: 0.5rem;
 }
 
 .plot-caption {
