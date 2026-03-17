@@ -114,53 +114,46 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="learning-grid">
-                                        <a class="learning-card" href="portfolio_shiny.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-1.jpg" alt="Shiny App Development">
+                                        <a class="learning-card" href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
+                                            <img src="portfolio/portfolio/media/image9.png" alt="RNA-seq PCA separating treatment groups">
                                             <div>
-                                                <h4>Shiny App Development</h4>
-                                                <p>Interactive visualization and analysis experiences.</p>
+                                                <h4>Transcriptomics (RNA-seq)</h4>
+                                                <p>Hippocampal irradiation + SFN study with PCA, volcano, and DEG heatmaps.</p>
                                             </div>
                                         </a>
                                         <a class="learning-card" href="portfolio_proteomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image_1.jpeg" alt="Proteomics">
+                                            <img src="portfolio/portfolio/media/image55.png" alt="Proteomics PCA of TMT data">
                                             <div>
-                                                <h4>Proteomics</h4>
-                                                <p>Biomarker discovery and pathway interpretation.</p>
+                                                <h4>Proteomics (TMT-MS)</h4>
+                                                <p>TMT-10 plex proteome shifts, DEP thresholds, and pathway discovery.</p>
                                             </div>
                                         </a>
                                         <a class="learning-card" href="portfolio_microbiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-2.jpg" alt="Microbiome Analytics">
+                                            <img src="portfolio/portfolio/media/image59.png" alt="QIIME2 workflow schematic">
                                             <div>
-                                                <h4>Microbiome Analytics</h4>
-                                                <p>Community profiling and functional inference.</p>
-                                            </div>
-                                        </a>
-                                        <a class="learning-card" href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
-                                            <img src="img/portfolio-4.jpg" alt="Transcriptomics">
-                                            <div>
-                                                <h4>Transcriptomics</h4>
-                                                <p>Bulk and single-cell RNA-seq workflows.</p>
+                                                <h4>Microbiome (QIIME2)</h4>
+                                                <p>Chemo +/- sulforaphane gut microbiota profiling and behavioral readouts.</p>
                                             </div>
                                         </a>
                                         <a class="learning-card" href="portfolio_multiomics.html" target="_blank" rel="noopener">
-                                            <img src="img/prot_image2.jpeg" alt="Integrated Omics">
+                                            <img src="portfolio/portfolio/media/image22.png" alt="Circos plot of mRNA-protein concordance">
                                             <div>
-                                                <h4>Integrated Omics</h4>
-                                                <p>Cross-modality integration and modeling.</p>
+                                                <h4>Multi-Omics Integration</h4>
+                                                <p>mixOmics correlation circles and Circos links to align transcript and protein signals.</p>
                                             </div>
                                         </a>
-                                        <a class="learning-card" href="#tab-projects" data-toggle="tab">
-                                            <img src="img/portfolio-3.jpg" alt="Machine Learning">
+                                        <a class="learning-card" href="portfolio_shiny.html" target="_blank" rel="noopener">
+                                            <img src="img/portfolio-1.jpg" alt="Shiny dashboard mosaic">
                                             <div>
-                                                <h4>Machine Learning</h4>
-                                                <p>Predictive modeling for biological systems.</p>
+                                                <h4>Interactive Dashboards</h4>
+                                                <p>Shiny apps turning omics pipelines into decision-ready visuals.</p>
                                             </div>
                                         </a>
                                         <a class="learning-card" href="https://github.com/raymondotoo/Rays-Assistant" target="_blank" rel="noopener">
                                             <img src="img/portfolio-4.jpg" alt="Rays-Assistant Agentic AI">
                                             <div>
                                                 <h4>Agentic AI (Rays-Assistant)</h4>
-                                                <p>Privacy-focused desktop app for local LLMs with persistent learning and model switching.</p>
+                                                <p>Privacy-first desktop AI with on-device models and persistent learning.</p>
                                             </div>
                                         </a>
                                     </div>
@@ -224,61 +217,81 @@
                                 <div class="col-md-6 mb-4">
                                     <div class="card project-card h-100">
                                         <div class="card-body">
-                                            <h5 class="card-title">Multi-Omics Analyses</h5>
-                                            <p class="card-text">Proteomics, DNA methylation, bulk RNA-seq, and single-cell RNA-seq workflows.</p>
-                                            <a class="project-link" href="https://github.com/raymondotoo/MultiOmics" target="_blank" rel="noopener">
-                                                github.com/raymondotoo/MultiOmics
+                                            <h5 class="card-title">Transcriptomics: Irradiation + SFN</h5>
+                                            <p class="card-text">nf-core/rnaseq pipeline; PCA cleanly separated treatment groups; mitochondrial and synaptic genes drove top 40 DEGs.</p>
+                                            <ul class="inline-list">
+                                                <li class="pill-ghost">PCA</li>
+                                                <li class="pill-ghost">Volcano + heatmap</li>
+                                                <li class="pill-ghost">FGSEA</li>
+                                            </ul>
+                                            <a class="project-link" href="portfolio_transcriptomics.html" target="_blank" rel="noopener">
+                                                View case study
                                             </a>
                                         </div>
-                                        <div class="card-footer project-meta">2022</div>
+                                        <div class="card-footer project-meta">RNA-seq • hippocampus • 10 Gy study</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <div class="card project-card h-100">
                                         <div class="card-body">
-                                            <h5 class="card-title">Rays-Assistant (Agentic AI)</h5>
-                                            <p class="card-text">Privacy-focused desktop app for interacting with multiple local LLMs. All models run on-device with persistent learning, conversation history, and easy model switching.</p>
+                                            <h5 class="card-title">Proteomics: TMT-MS Biomarker Discovery</h5>
+                                            <p class="card-text">TMT-10 plex hippocampal proteome; VSN + MinProb; DEP thresholds (|log2FC| ≥ 1.5, adj. p ≤ 0.05); pathways converged on neuronal signaling and inflammation.</p>
+                                            <ul class="inline-list">
+                                                <li class="pill-ghost">Orbitrap Eclipse</li>
+                                                <li class="pill-ghost">MaxQuant</li>
+                                                <li class="pill-ghost">IPA / FGSEA</li>
+                                            </ul>
+                                            <a class="project-link" href="portfolio_proteomics.html" target="_blank" rel="noopener">
+                                                View case study
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">Proteomics • DEP • pathway modeling</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Multi-Omics Integration (mixOmics)</h5>
+                                            <p class="card-text">Correlated transcriptome–proteome signals with correlation circles and Circos links; highlighted neuroinflammation, mitochondrial dysfunction, and synaptic disruption.</p>
+                                            <ul class="inline-list">
+                                                <li class="pill-ghost">mixOmics</li>
+                                                <li class="pill-ghost">Circos</li>
+                                                <li class="pill-ghost">Pathway triage</li>
+                                            </ul>
+                                            <a class="project-link" href="portfolio_multiomics.html" target="_blank" rel="noopener">
+                                                View case study
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">Integration • mRNA–protein concordance</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Microbiome: Chemo +/- SFN (QIIME2)</h5>
+                                            <p class="card-text">16S V3–V4 profiling; chemo-only vs chemo+SFN groups; behavioral memory deficits on days 3–5; no significant SFN-driven microbiome shifts.</p>
+                                            <ul class="inline-list">
+                                                <li class="pill-ghost">QIIME2</li>
+                                                <li class="pill-ghost">Diversity + DA</li>
+                                                <li class="pill-ghost">Behavioral linkage</li>
+                                            </ul>
+                                            <a class="project-link" href="portfolio_microbiomics.html" target="_blank" rel="noopener">
+                                                View case study
+                                            </a>
+                                        </div>
+                                        <div class="card-footer project-meta">Microbiome • chemo study</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="card project-card h-100">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Agentic AI: Rays-Assistant</h5>
+                                            <p class="card-text">Desktop agent for on-device LLMs with persistent learning, model switching, and offline privacy controls.</p>
                                             <a class="project-link" href="https://github.com/raymondotoo/Rays-Assistant" target="_blank" rel="noopener">
                                                 github.com/raymondotoo/Rays-Assistant
                                             </a>
                                         </div>
-                                        <div class="card-footer project-meta">2024</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="card project-card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">CORD-19 NLP Project</h5>
-                                            <p class="card-text">Natural language processing pipeline for large-scale literature mining.</p>
-                                            <a class="project-link" href="https://github.com/raymondotoo/CORD-19-NLP-project" target="_blank" rel="noopener">
-                                                github.com/raymondotoo/CORD-19-NLP-project
-                                            </a>
-                                        </div>
-                                        <div class="card-footer project-meta">2022</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="card project-card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">MLOps Microservices</h5>
-                                            <p class="card-text">Operationalized a microservices Flask application with automation best practices.</p>
-                                            <a class="project-link" href="https://github.com/raymondotoo/MLOps-Project" target="_blank" rel="noopener">
-                                                github.com/raymondotoo/MLOps-Project
-                                            </a>
-                                        </div>
-                                        <div class="card-footer project-meta">2022</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <div class="card project-card h-100">
-                                        <div class="card-body">
-                                            <h5 class="card-title">CI/CD Autodeploy</h5>
-                                            <p class="card-text">Full CI/CD pipeline using CircleCI, Ansible, and AWS CloudFormation.</p>
-                                            <a class="project-link" href="https://github.com/raymondotoo/Autodeploy" target="_blank" rel="noopener">
-                                                github.com/raymondotoo/Autodeploy
-                                            </a>
-                                        </div>
-                                        <div class="card-footer project-meta">2022</div>
+                                        <div class="card-footer project-meta">AI • desktop • privacy-first</div>
                                     </div>
                                 </div>
                             </div>

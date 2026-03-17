@@ -7,26 +7,78 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container bg-white pt-5 pb-3">
+    <div class="container bg-white pt-5 pb-5">
         <div class="row px-3">
             <div class="col-12">
-                <h1 class="mt-2">Proteomics</h1>
-                <p>Advanced protein quantification, biomarker discovery, and pathway analysis.</p>
+                <div class="case-hero">
+                    <p class="kicker">Case Study — Proteomics (TMT-MS)</p>
+                    <h1 class="mt-2">Hippocampal proteome shifts after cranial irradiation</h1>
+                    <p>Quantified TMT-10plex hippocampal proteomes to pinpoint irradiation-driven changes and assess sulforaphane (SFN) modulation. Built a DEP pipeline (VSN + MinProb) and pathway modeling to prioritize therapeutic targets.</p>
+                    <div class="case-meta">
+                        <span class="case-chip highlight">TMT-10plex</span>
+                        <span class="case-chip">Orbitrap Eclipse</span>
+                        <span class="case-chip">MaxQuant -> DEP</span>
+                        <span class="case-chip">IPA / FGSEA</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-12 case-section">
+                <h3>Objective</h3>
+                <p>Quantify hippocampal protein changes after 10 Gy irradiation and evaluate whether SFN modulates long-term molecular damage.</p>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Workflow</h3>
+                <div class="fact-grid mb-3">
+                    <div class="fact-card">
+                        <span class="fact-label">Acquisition</span>
+                        <span class="fact-value">TMT-10plex, Orbitrap Eclipse</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Processing</span>
+                        <span class="fact-value">MaxQuant -> DEP (VSN + MinProb)</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Significance</span>
+                        <span class="fact-value">|log2FC| ≥ 1.5 & adj. p ≤ 0.05</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Interpretation</span>
+                        <span class="fact-value">FGSEA + IPA networks</span>
+                    </div>
+                </div>
+                <p>DEP thresholds prioritized high-confidence proteins; IPA and FGSEA contextualized pathways and upstream regulators relevant to neuronal signaling and inflammation.</p>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Key Results</h3>
+                <ul>
+                    <li>PCA cleanly separated treatment groups, indicating irradiation-driven proteome shifts.</li>
+                    <li>Differential proteins mapped to neuronal signaling, synaptic function, and inflammatory pathways.</li>
+                    <li>Candidate nodes emerging from IPA/FGSEA inform follow-up validation and therapeutic targeting.</li>
+                </ul>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Visuals</h3>
+                <div class="figure-grid">
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image55.png" alt="Proteomics PCA separating treatment groups">
+                    </div>
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image56.png" alt="Proteomics overview of differential abundance">
+                    </div>
+                </div>
+            </div>
+
             <div class="col-12">
-                <div class="portfolio-projects">
-                    <div class="project-card">
-                        <h3>Project: Protein Expression Atlas</h3>
-                        <p>Comprehensive analysis of protein expression across disease states, with publication-grade heatmaps and volcano plots.</p>
-                        <img src="../img/prot_image_1.jpeg" alt="Protein Expression Plot" class="portfolio-img">
-                        <img src="../img/prot_image2.jpeg" alt="Protein Expression Plot 2" class="portfolio-img">
+                <div class="cta-panel">
+                    <div>
+                        <h2>Need proteomics you can trust?</h2>
+                        <p>Let's design a TMT or DIA workflow with clear QC, reproducible code, and decision-ready pathway summaries.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>Project: Pathway Enrichment Analysis</h3>
-                        <p>Proteomics data-driven pathway enrichment, visualized with annotated barplots and network diagrams.</p>
-                        <img src="../img/portfolio-4.jpg" alt="Pathway Plot" class="portfolio-img">
-                        <img src="../img/portfolio-1.jpg" alt="Pathway Plot 2" class="portfolio-img">
-                    </div>
+                    <a class="btn btn-dark" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">Book a chat</a>
                 </div>
             </div>
         </div>

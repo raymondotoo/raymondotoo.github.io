@@ -7,26 +7,81 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container bg-white pt-5 pb-3">
+    <div class="container bg-white pt-5 pb-5">
         <div class="row px-3">
             <div class="col-12">
-                <h1 class="mt-2">Transcriptomics</h1>
-                <p>Bulk and single-cell RNA-seq analysis for gene expression studies.</p>
+                <div class="case-hero">
+                    <p class="kicker">Case Study — Transcriptomics</p>
+                    <h1 class="mt-2">Cranial irradiation +/- sulforaphane (SFN) in juvenile hippocampus</h1>
+                    <p>Bulk RNA-seq (nf-core/rnaseq) on hippocampal tissue to reveal how 10 Gy irradiation impacts cognition-linked pathways and whether SFN mitigates those effects.</p>
+                    <div class="case-meta">
+                        <span class="case-chip highlight">nf-core/rnaseq</span>
+                        <span class="case-chip">PCA (top 500 genes)</span>
+                        <span class="case-chip">Volcano + top-40 heatmap</span>
+                        <span class="case-chip">FGSEA</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-12 case-section">
+                <h3>Objective</h3>
+                <p>Determine how cranial irradiation alters hippocampal gene expression and whether SFN modulates those signatures.</p>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Workflow</h3>
+                <div class="fact-grid mb-3">
+                    <div class="fact-card">
+                        <span class="fact-label">Pipeline</span>
+                        <span class="fact-value">nf-core/rnaseq</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">QC</span>
+                        <span class="fact-value">PCA on top 500 variable genes</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">DE</span>
+                        <span class="fact-value">Volcano plot + ranked heatmap (top 40)</span>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-label">Focus</span>
+                        <span class="fact-value">Mitochondria, synapse, inflammation</span>
+                    </div>
+                </div>
+                <p>PCA confirmed clean separation of treatment groups; DE genes were prioritized and visualized with volcano and heatmap views for quick hypothesis generation.</p>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Key Results</h3>
+                <ul>
+                    <li>Highlighted genes: <strong>Atp6v1h</strong>, <strong>Fer1l5</strong>, <strong>Hibch</strong> (mitochondrial/metabolic); <strong>Nfkbie</strong> upregulated; <strong>TTN</strong> and <strong>SLC39A6</strong> downregulated.</li>
+                    <li>Pathways disrupted: neuronal signaling, synaptic function, and inflammatory cascades.</li>
+                    <li>Findings dovetail with proteomics and microbiome results for a cohesive mechanistic story.</li>
+                </ul>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Visuals</h3>
+                <div class="figure-grid">
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image9.png" alt="PCA of top 500 most variable genes">
+                    </div>
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image10.png" alt="Volcano plot highlighting DEGs">
+                    </div>
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image11.png" alt="Heatmap of top 40 differentially expressed genes">
+                    </div>
+                </div>
+            </div>
+
             <div class="col-12">
-                <div class="portfolio-projects">
-                    <div class="project-card">
-                        <h3>Project: Single-Cell Atlas</h3>
-                        <p>Single-cell RNA-seq analysis revealing cell-type-specific gene expression, with UMAP and violin plots.</p>
-                        <img src="../img/portfolio-4.jpg" alt="Single-Cell Plot" class="portfolio-img">
-                        <img src="../img/portfolio-1.jpg" alt="Single-Cell Plot 2" class="portfolio-img">
+                <div class="cta-panel">
+                    <div>
+                        <h2>Planning an RNA-seq study?</h2>
+                        <p>From pipeline selection to crisp visuals, I deliver reproducible analyses that decision-makers can act on.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>Project: Bulk RNA-seq Differential Expression</h3>
-                        <p>Bulk RNA-seq analysis for differential gene expression, visualized with heatmaps and volcano plots.</p>
-                        <img src="../img/portfolio-2.jpg" alt="Bulk RNA-seq Plot" class="portfolio-img">
-                        <img src="../img/portfolio-3.jpg" alt="Bulk RNA-seq Plot 2" class="portfolio-img">
-                    </div>
+                    <a class="btn btn-dark" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">Discuss your dataset</a>
                 </div>
             </div>
         </div>

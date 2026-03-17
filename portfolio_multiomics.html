@@ -7,26 +7,64 @@
     <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container bg-white pt-5 pb-3">
+    <div class="container bg-white pt-5 pb-5">
         <div class="row px-3">
             <div class="col-12">
-                <h1 class="mt-2">Multiomics Integration</h1>
-                <p>Integrative analysis of proteomics, transcriptomics, and microbiomics data.</p>
+                <div class="case-hero">
+                    <p class="kicker">Case Study — Multi-Omics Integration</p>
+                    <h1 class="mt-2">Aligning transcriptome and proteome signals with mixOmics</h1>
+                    <p>Integrated matched RNA-seq and TMT proteomics to pinpoint convergent pathways driving irradiation-induced cognitive deficits and SFN responses.</p>
+                    <div class="case-meta">
+                        <span class="case-chip highlight">mixOmics</span>
+                        <span class="case-chip">Correlation circle</span>
+                        <span class="case-chip">Circos concordance</span>
+                        <span class="case-chip">FGSEA / IPA overlays</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-12 case-section">
+                <h3>Objective</h3>
+                <p>Integrate transcript and protein readouts to surface convergent pathways and therapeutic targets in irradiation + SFN models.</p>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Approach</h3>
+                <ul>
+                    <li>Pre-filtered genes/proteins for reliability, scaled/centered for cross-omics correlation.</li>
+                    <li>mixOmics correlation circle to visualize mRNA-protein concordance; Circos plot to link paired features.</li>
+                    <li>Overlaid FGSEA/IPA pathway summaries to prioritize actionable targets.</li>
+                </ul>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Neuroinflammation, mitochondrial dysfunction, and synaptic disruption were the dominant convergent signals.</li>
+                    <li>Highlighted candidates such as <strong>CREB</strong> and <strong>PSEN1</strong> for follow-up validation.</li>
+                    <li>Noted limits: few DE proteins and modest mRNA-protein correlations, informing future sample sizing.</li>
+                </ul>
+            </div>
+
+            <div class="col-12 case-section">
+                <h3>Visuals</h3>
+                <div class="figure-grid">
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image21.png" alt="Correlation circle showing mRNA-protein concordance">
+                    </div>
+                    <div class="plot-frame">
+                        <img src="portfolio/portfolio/media/image22.png" alt="Circos plot linking transcript and protein pairs">
+                    </div>
+                </div>
+            </div>
+
             <div class="col-12">
-                <div class="portfolio-projects">
-                    <div class="project-card">
-                        <h3>Project: Disease Mechanism Explorer</h3>
-                        <p>Integrative analysis of multiomics data to uncover disease mechanisms, with publication-grade network and pathway plots.</p>
-                        <img src="../img/portfolio-3.jpg" alt="Multiomics Plot" class="portfolio-img">
-                        <img src="../img/prot_image_1.jpeg" alt="Multiomics Plot 2" class="portfolio-img">
+                <div class="cta-panel">
+                    <div>
+                        <h2>Bring your omics together</h2>
+                        <p>I can connect transcript, protein, and metabolite layers with transparent methods and visuals stakeholders understand.</p>
                     </div>
-                    <div class="project-card">
-                        <h3>Project: Biomarker Integration Pipeline</h3>
-                        <p>Pipeline for integrating proteomics, transcriptomics, and microbiomics biomarkers, visualized with annotated heatmaps and correlation plots.</p>
-                        <img src="../img/prot_image2.jpeg" alt="Biomarker Integration Plot" class="portfolio-img">
-                        <img src="../img/portfolio-1.jpg" alt="Biomarker Integration Plot 2" class="portfolio-img">
-                    </div>
+                    <a class="btn btn-dark" href="https://www.linkedin.com/in/raymondotoo" target="_blank" rel="noopener">Start an integration plan</a>
                 </div>
             </div>
         </div>
