@@ -62,15 +62,29 @@
 
             <div class="col-12 case-section">
                 <h3>Visuals</h3>
-                <div class="figure-grid">
-                    <div class="plot-frame">
-                        <img src="portfolio/portfolio/media/image9.png" alt="PCA of top 500 most variable genes">
+                <div class="plot-tabs" data-default="rna-pca">
+                    <div class="plot-tabbar">
+                        <button type="button" class="active" data-plot-target="rna-pca">PCA</button>
+                        <button type="button" data-plot-target="rna-volcano">Volcano</button>
+                        <button type="button" data-plot-target="rna-heatmap">Top-40 Heatmap</button>
                     </div>
-                    <div class="plot-frame">
-                        <img src="portfolio/portfolio/media/image10.png" alt="Volcano plot highlighting DEGs">
+                    <div class="plot-pane active" id="rna-pca">
+                        <div class="plot-frame">
+                            <img src="portfolio/portfolio/media/image9.png" alt="PCA of top 500 most variable genes">
+                        </div>
+                        <p class="plot-caption">PCA shows clean separation of treatment groups; QC gate for downstream DE.</p>
                     </div>
-                    <div class="plot-frame">
-                        <img src="portfolio/portfolio/media/image11.png" alt="Heatmap of top 40 differentially expressed genes">
+                    <div class="plot-pane" id="rna-volcano">
+                        <div class="plot-frame">
+                            <img src="portfolio/portfolio/media/image10.png" alt="Volcano plot highlighting DEGs">
+                        </div>
+                        <p class="plot-caption">Volcano plot highlighting significant DEGs driving mitochondrial and synaptic changes.</p>
+                    </div>
+                    <div class="plot-pane" id="rna-heatmap">
+                        <div class="plot-frame">
+                            <img src="portfolio/portfolio/media/image11.png" alt="Heatmap of top 40 differentially expressed genes">
+                        </div>
+                        <p class="plot-caption">Top 40 DEGs clustered to surface mitochondria and neuronal signaling signatures.</p>
                     </div>
                 </div>
             </div>
@@ -86,5 +100,20 @@
             </div>
         </div>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.plot-tabs').forEach(wrapper => {
+        const buttons = wrapper.querySelectorAll('[data-plot-target]');
+        const panes = wrapper.querySelectorAll('.plot-pane');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const target = btn.getAttribute('data-plot-target');
+            buttons.forEach(b => b.classList.toggle('active', b === btn));
+            panes.forEach(p => p.classList.toggle('active', p.id === target));
+          });
+        });
+      });
+    });
+    </script>
 </body>
 </html>

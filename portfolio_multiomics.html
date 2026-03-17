@@ -48,12 +48,22 @@
 
             <div class="col-12 case-section">
                 <h3>Visuals</h3>
-                <div class="figure-grid">
-                    <div class="plot-frame">
-                        <img src="portfolio/portfolio/media/image21.png" alt="Correlation circle showing mRNA-protein concordance">
+                <div class="plot-tabs" data-default="mix-circle">
+                    <div class="plot-tabbar">
+                        <button type="button" class="active" data-plot-target="mix-circle">Correlation circle</button>
+                        <button type="button" data-plot-target="mix-circos">Circos concordance</button>
                     </div>
-                    <div class="plot-frame">
-                        <img src="portfolio/portfolio/media/image22.png" alt="Circos plot linking transcript and protein pairs">
+                    <div class="plot-pane active" id="mix-circle">
+                        <div class="plot-frame">
+                            <img src="portfolio/portfolio/media/image21.png" alt="Correlation circle showing mRNA-protein concordance">
+                        </div>
+                        <p class="plot-caption">mixOmics correlation circle highlights mRNA-protein concordance across cohorts.</p>
+                    </div>
+                    <div class="plot-pane" id="mix-circos">
+                        <div class="plot-frame">
+                            <img src="portfolio/portfolio/media/image22.png" alt="Circos plot linking transcript and protein pairs">
+                        </div>
+                        <p class="plot-caption">Circos plot links paired transcript-protein features, surfacing convergent pathways.</p>
                     </div>
                 </div>
             </div>
@@ -69,5 +79,20 @@
             </div>
         </div>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.plot-tabs').forEach(wrapper => {
+        const buttons = wrapper.querySelectorAll('[data-plot-target]');
+        const panes = wrapper.querySelectorAll('.plot-pane');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const target = btn.getAttribute('data-plot-target');
+            buttons.forEach(b => b.classList.toggle('active', b === btn));
+            panes.forEach(p => p.classList.toggle('active', p.id === target));
+          });
+        });
+      });
+    });
+    </script>
 </body>
 </html>

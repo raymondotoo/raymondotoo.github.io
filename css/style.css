@@ -509,6 +509,61 @@ body {
   font-weight: 500;
   background: #ffffff;
 }
+
+/* Plot tab viewer */
+.plot-tabs {
+  border: 1px solid #e3ede7;
+  border-radius: 16px;
+  background: linear-gradient(120deg, #f8fff8, #eef6f0);
+  box-shadow: 0 12px 28px rgba(20, 60, 40, 0.08);
+  padding: 1.25rem;
+}
+
+.plot-tabbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.plot-tabbar button {
+  border: 1px solid #d9efe1;
+  background: #ffffff;
+  color: #1b4d3e;
+  padding: 0.45rem 0.95rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.plot-tabbar button.active {
+  background: #2d6a4f;
+  color: #ffffff;
+  border-color: #2d6a4f;
+  box-shadow: 0 8px 18px rgba(45, 106, 79, 0.25);
+}
+
+.plot-tabbar button:hover {
+  transform: translateY(-1px);
+}
+
+.plot-pane {
+  display: none;
+}
+
+.plot-pane.active {
+  display: block;
+}
+
+.plot-pane .plot-frame {
+  margin-bottom: 0.75rem;
+}
+
+.plot-caption {
+  color: #4c5b55;
+  font-size: 0.95rem;
+}
 .learning-path-card {
   background: linear-gradient(135deg, #f8fff8 0%, #e6f7ea 100%);
   border-radius: 16px;
